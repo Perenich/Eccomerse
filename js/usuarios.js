@@ -1,3 +1,65 @@
+const body = document.querySelector('body')
+
+body.innerHTML = `<div class="container-form sign-up">
+                     <div class="welcome-back">
+                         <div class="message">
+                             <h2>Bienvenido a LimpiaMax!</h2>
+                             <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                             <button class="sign-up-btn">Iniciar Sesion</button>
+                         </div>
+                     </div>
+                     <form class="formulario product-container" id="form">
+                         <h2 class="create-account">Crear una cuenta</h2>
+                         <div class="iconos">
+                             <div class="border-icon">
+                                 <i class='bx bxl-instagram'></i>
+                             </div>
+                             <div class="border-icon">
+                                 <i class='bx bxl-linkedin' ></i>
+                             </div>
+                             <div class="border-icon">
+                                 <i class='bx bxl-facebook-circle' ></i>
+                             </div>
+                         </div>
+                         <p class="cuenta-gratis">Crear una cuenta gratis</p>
+                         <input type="text" placeholder="Nombre" id="name">
+                         <input type="email" placeholder="Email" id="email">
+                         <input type="password" placeholder="Contraseña" id="password">
+                         <input type="submit" value="Registrarse">
+                         <p class="warnings" id="warnings"></p>
+                         <a href="../index.html"><input type="button" value="Volver al inicio"></a>
+                     </form>
+                     </div>
+                     <div class="container-form sign-in">
+                     <form class="formulario" id="formDos">
+                         <h2 class="create-account">Iniciar Sesion</h2>
+                         <div class="iconos">
+                             <div class="border-icon">
+                                 <i class='bx bxl-instagram'></i>
+                             </div>
+                             <div class="border-icon">
+                                 <i class='bx bxl-linkedin' ></i>
+                             </div>
+                             <div class="border-icon">
+                                 <i class='bx bxl-facebook-circle' ></i>
+                             </div>
+                         </div>
+                         <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+                         <input type="email" placeholder="Email" id="emailDos">
+                         <input type="password" placeholder="Contraseña" id="passwordDos">
+                         <input type="submit" value="Iniciar Sesion">
+                         <p class="warnings" id="warningsDos"></p>
+                         <a href="../index.html"><input type="button" value="Volver al inicio"></a>
+                     </form>
+                     <div class="welcome-back">
+                         <div class="message">
+                             <h2>Bienvenido de nuevo</h2>
+                             <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                             <button class="sign-in-btn">Registrarse</button>
+                         </div>
+                     </div>
+                 </div>`
+
 const btnSignIn= document.querySelector('.sign-in-btn'),
       btnSignUp = document.querySelector('.sign-up-btn'),  
       signUp = document.querySelector('.sign-up'),
